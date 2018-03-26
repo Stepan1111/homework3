@@ -3,17 +3,15 @@ import React, { Component } from 'react';
 import data from './data.js';
 import PostListItem from './PostListItem.js';
 import  '../App.css';
-// import MoreButton from './MoreButton.js';
- 
 
 export default class PostList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          limit: 10
+            limit: 10
         };
         this.loadMore = this.loadMore.bind(this);
-      }
+    }
     
  
     renderList() {
@@ -31,8 +29,6 @@ export default class PostList extends Component {
             alert("Sorry, this is end of list")
         }
     }
-    // <button onClick={this.loadMore} >Show More</button>
-    // <MoreButton onClick={this.loadMore}/>
     render() {
         return (
             <div>
