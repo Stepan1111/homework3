@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    padding: 0px;
+    background-color:#DCDCDC;
+}
+.header{
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+.list{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.listItem{
+    list-style-type: none;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom: 2px solid white;
+}
+.listItem>h3{
+    padding-bottom: 15px;
+    padding-top:10px;
+    text-align: center;
+}
+.listItem>p{
+    padding-top:10px;
+}
+.button{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.button>button{
+    height: 45px;
+    width: 130px;
+    background-color: grey;
+    color: white;
+    font-size: 18px;
+    border: 3px solid #C0C0C0;
+}
