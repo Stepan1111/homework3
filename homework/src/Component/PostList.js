@@ -2,6 +2,7 @@ import React, { Component } from 'react';
  
 import data from './data.js';
 import PostListItem from './PostListItem.js';
+import MoreButton from './MoreButton.js';
 import  '../App.css';
 
 export default class PostList extends Component {
@@ -34,9 +35,7 @@ export default class PostList extends Component {
             <div>
                 <ul className="list">
                     {this.renderList()}
-                    <div  className="button">
-                        <button onClick={this.loadMore}>Show More</button>
-                    </div>
+                    <MoreButton loadMore={this.loadMore}/>
                 </ul>
             </div>
         );
