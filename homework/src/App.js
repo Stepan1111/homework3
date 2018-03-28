@@ -27,9 +27,13 @@ export default class App extends Component {
     }
     
     renderList() {
-        return this.filterData().slice(0, this.state.limit).map((data) => (
-            <PostListItem key={data.id} title={data.title} body={data.body} search={this.state.search}/>
-        ));
+        if(this.filterData().length !== 0){
+            return this.filterData().slice(0, this.state.limit).map((data) => (
+                <PostListItem key={data.id} title={data.title} body={data.body} search={this.state.search}/>
+            ));
+        }else{
+            return <h3 className="noItemFound">No items found</h3>
+        }
     }
     
     loadMore() {
