@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class MoreButton extends Component {
-    
-  render() {
+export default function MoreButton(props){
     return (
-        <div>
-            <button onClick={this.props.loadMore}>Show More</button>
+        <div className="button">
+            <button onClick={props.loadMore} >Show More</button>
         </div>
     );
-  }
 }

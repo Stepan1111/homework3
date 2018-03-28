@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
-import  '../App.css';
+import React from 'react';
 
-export default class PostListItem extends Component {
-    render() {
-        return (
-            <li className="listItem">
-                <h3>{this.props.title}</h3>
-                <p>{this.props.body}</p>
-            </li>
-        );
-    }
+export default function PostListItem(props){
+    return (
+        <li className="listItem">
+            <h3>{props.title}</h3>
+            <p>{props.body}</p>
+        </li>
+    );
 }

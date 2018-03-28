@@ -39,3 +39,24 @@
     font-size: 18px;
     border: 3px solid #C0C0C0;
 }
+.search{
+    text-align: right;
+    padding-right: 50px;
+}
+.search>input{
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 200px;
+    font-size: 18px;
+    height: 30px;
+    color:grey;
+    border-bottom: 2px solid grey;
+}
+.search>input:focus{
+    border-bottom: 2px solid white;
+}
+
+.search>input::placeholder {
+    color: white;
+}
