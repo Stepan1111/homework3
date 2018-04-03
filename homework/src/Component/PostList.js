@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function PostList(props){
+export default function PostList(props) {
     return (
         <div>
-            <ul className="list">
+            <ul className = "list">
                 {props.renderList()}
             </ul>
         </div>
