@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
  
-import data from './Component/data.js';
-import PostList from './Component/PostList.js';
-import PostListItem from './Component/PostListItem.js';
-import MoreButton from './Component/MoreButton.js';
+import PostListItem from './Component/postListItem.js';
+import MoreButton from './Component/moreButton.js';
+import PostList from './Component/postList.js';
 import Search from './Component/search.js';
+import data from './Component/data.js';
 
 import  './App.css';
  
